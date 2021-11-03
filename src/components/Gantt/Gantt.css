@@ -1,0 +1,31 @@
+html, body, #root,#root > div, .gantt-container {
+    height: 98.8%;
+}
+.gantt_layout_content{
+    overflow-x: auto;
+}
+
+.gantt_task_line {
+    /* background-color: var(--antd-wave-shadow-color); */
+    border: 1px solid #2195f31c;
+}
+
+.gantt_task_line.gantt_selected {
+    /* box-shadow: 0 0 5px var(--antd-wave-shadow-color); */
+}
+
+.gantt_task_progress {
+    background: #4caf50;
+}
+
+.gantt_grid_data .gantt_row.gantt_selected, 
+.gantt_grid_data .gantt_row.odd.gantt_selected, 
+.gantt_task_row.gantt_selected {
+    background-color: #2195f31c;
+}
+.gantt_task_row.gantt_selected .gantt_task_cell {
+    border-right-color: #2195f31c;
+}
+.gantt_grid_data .gantt_row.odd:hover, .gantt_grid_data .gantt_row:hover {
+    background-color: #2195f31c;
+}
